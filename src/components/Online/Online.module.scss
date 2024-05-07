@@ -1,0 +1,103 @@
+.online {
+  min-width: 270px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $border;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.onlineTotal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 8px 16px;
+  color: $grey;
+  background-color: $frame-header-bgc;
+  gap: 10px;
+  color: $grey;
+}
+
+.onlineTotal span {
+  position: relative;
+  top: 4px;
+}
+
+.onlineTotalTitle {
+  font-size: 24px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.onlineFooter {
+  background-color: #ebebeb;
+  height: 64px;
+}
+
+.onlineClose {
+  display: none;
+  background-color: #0c0c0c;
+}
+
+.onlineClose::after {
+  content: "\00d7";
+  scale: 1.5;
+  color: #fff;
+}
+
+.onlineClose:active::after {
+  color: $feature-color;
+}
+
+@media (max-width: 768px) {
+  .online {
+    position: absolute;
+    width: 50%;
+    height: calc(100dvh - 64px);
+    border-radius: 0;
+    left: -100%;
+    color: #eee;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  .onlineClose {
+    display: block;
+    z-index: 1;
+
+  }
+
+  .onlineTotal {
+    background-color: $online-bgc;
+    color: #eee;
+  }
+
+  .onlineTotal::before {
+    content: "";
+    background-color: #eee;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    bottom: 0;
+  }
+  
+  .onlineFooter {
+    display: none;
+    background-color: $online-bgc;
+  }
+}
+
+@media (max-width: 576px) {
+  .online {
+      // --top: 4px;
+      width: 100%;
+      border-radius: 0;
+  }
+}

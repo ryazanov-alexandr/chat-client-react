@@ -1,0 +1,46 @@
+.onlineUser {
+  position: relative;
+  padding: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  background-color: #fff;
+}
+
+.onlineUser:last-child {
+  margin-bottom: 4px;
+}
+
+.onlineUser::after {
+  content: "";
+  position: absolute;
+  background-color: $frame-header-bgc;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+}
+
+.onlineUserName {
+  color: #2d2d2d;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+  .onlineUser {
+    background-color: $online-bgc;
+  }
+  .onlineUserName {
+    color: $feature-color;
+  }
+  .onlineUser::after {
+    background-color: #eee;
+    height: 0.5px;
+    left: 4px;
+    right: 8px;
+  }
+}

@@ -1,0 +1,93 @@
+.message {
+  position: relative;
+  padding-block: 10px 8px;
+  padding-inline: 10px;
+  margin-top: 4px;
+  max-width: 50%;
+  border-radius: 16px;
+}
+
+.messageLeft {
+  align-self: start;
+  background-color: #fff;
+  color: $dark-grey;
+  border-bottom-left-radius: 0px;
+  box-shadow: -2px 2px 4px #b8b8b8;
+}
+
+.messageRight {
+  align-self: end;
+  border-bottom-right-radius: 0px;
+  background-color: $dark-grey;
+  color: #fff;
+  box-shadow: 2px 2px 4px #4e4e4e;
+}
+
+.messageLeft + .messageRight,
+.messageRight + .messageLeft {
+  margin-top: 12px;
+}
+
+.messageInner {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(16px + (24 - 16) * ((100vw - 576px) / (1920 - 576)));
+}
+
+.messageImage {
+  margin-bottom: 6px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.author {
+  font-size: 0.6em;
+  color: $feature-color;
+  margin-bottom: 1px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 0.9em;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+.dateTime {
+  align-self: end;
+  font-style: italic;
+  font-size: 0.6em;
+  color: $feature-color;
+  text-align: end;
+  margin-top: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .message {
+    max-width: 60%;
+  }
+
+  .author {
+    font-size: 0.9em;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .dateTime {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .message {
+    max-width: 70%;
+  }
+}

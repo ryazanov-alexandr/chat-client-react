@@ -1,0 +1,22 @@
+.wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: max(600px, 70dvh);
+}
+
+@media (max-width: 998px) {
+    .wrapper {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        position: relative;
+        min-width: 350px;
+        height: 100dvh;
+        overflow: hidden;
+    }
+}

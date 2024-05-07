@@ -1,0 +1,30 @@
+.kebab {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  width: 8px;
+  height: 32px;
+  top: 16px;
+  right: 16px;
+}
+
+.kebab > span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.kebab:active > span {
+  background-color: $feature-color;
+}
+
+@media (max-width: 768px) {
+  .kebab {
+    display: flex;
+  }
+}

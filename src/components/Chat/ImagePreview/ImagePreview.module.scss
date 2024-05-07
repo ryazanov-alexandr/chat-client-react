@@ -1,0 +1,49 @@
+.imagePreviewWrapper {
+  padding: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 108px;
+  background-color: #ebebeb;
+}
+
+.imagePreviewWrapper.active {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.imagePreviewItem {
+  position: relative;
+  width: 98px;
+  height: 98px;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.imagePreviewClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background: #7e7e7e;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+}
+.imagePreviewClose:before {
+  content: "\00d7";
+  scale: 1.4;
+  color: #fff;
+}

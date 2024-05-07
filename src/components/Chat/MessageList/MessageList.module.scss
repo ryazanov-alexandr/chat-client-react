@@ -1,0 +1,42 @@
+.messageList {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: $frame-bgc;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    list-style: none;
+}
+
+.feedback {
+    font-style: italic;
+    font-size: 0.8rem;
+    padding: 20px;
+    color: $dark-grey;
+    text-align: center;
+}
+
+.messageList::-webkit-scrollbar {
+    width: 4px;
+}
+  
+.messageList::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.messageList::-webkit-scrollbar-thumb {
+    background: $grey;
+    border-radius: 10px;
+}
+
+.messageList::-webkit-scrollbar-thumb:hover {
+    width: 10px;
+    background: $dark-grey;
+}
+
+.messageList::-webkit-scrollbar-thumb:active {
+    background: $feature-color;
+}

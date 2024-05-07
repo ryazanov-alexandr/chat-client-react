@@ -1,0 +1,29 @@
+.userInfo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  font-weight: 700;
+  padding: 8px 16px;
+  color: $grey;
+  background-color: $frame-header-bgc;
+  gap: 10px;
+  color: $grey;
+}
+
+.userName {
+  font-size: 24px;
+  font-weight: 700;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .userInfo {
+    height: 56px;
+  }
+  .userName {
+    font-size: 20px;
+  }
+}

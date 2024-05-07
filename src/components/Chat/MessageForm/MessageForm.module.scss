@@ -1,0 +1,74 @@
+.messageForm {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 64px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.textInput {
+    flex-grow: 1;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    max-height: 48px;
+    align-self: center;
+    overflow: hidden;
+    color: $dark-grey;
+}
+
+.textInput:empty::before {
+    content: "Напишите сообщение...";
+    color: $grey;
+    cursor: text;
+}
+
+.imageInput {
+    display: flex;
+    align-items: center;
+    color: #2d2d2d;
+    padding-inline: 12px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttonSend {
+    font-family: inherit;
+    background-color: #fff;
+    color: $dark-grey;
+    padding: 0px 30px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.divider {
+    background-color: #ebebeb;
+    width: 2px;
+}
+
+#image-input:disabled + label, .send:disabled {
+    background-color: $frame-header-bgc;
+    color: $grey;
+    scale: unset;
+    cursor: auto;
+}
+
+@media (hover: hover) {
+    #imageInputId:hover:enabled + label svg,
+    .buttonSend:hover svg {
+        color: $feature-color;
+        scale: 1.1;   
+    }
+}
+
+@media (max-width: 768px) {
+    .messageForm {
+        min-height: 64px;
+    }
+}

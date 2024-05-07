@@ -1,0 +1,14 @@
+.userAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $dark-grey;
+  border: none;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+  .userAvatar {
+    border: 1px solid $feature-color;
+  }
+}

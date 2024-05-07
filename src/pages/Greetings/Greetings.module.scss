@@ -1,0 +1,43 @@
+.greetings {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3rem);
+  color: #05031D;
+}
+
+.chatLink {
+  padding: 18px 20px;
+  min-width: clamp(340px, 30%, 450px);
+  border-radius: 16px;
+  background-color: #05031D;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #f5f5f5;
+  transition: all 0.3s;
+  border: 2px solid #f5f5f5;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center; 
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 20px #000000;
+    border: 2px solid #f5f5f5;
+  }
+}
+
+
+@media (hover: hover) {
+  .chatLink:hover {
+    background: transparent;
+    color: $dark-blue;
+    border-color: $dark-blue;
+  }
+}
