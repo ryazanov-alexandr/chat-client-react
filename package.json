@@ -16,7 +16,6 @@
     "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
-    "sass-resources-loader": "^2.2.5",
     "socket.io-client": "^4.7.5",
     "web-vitals": "^2.1.4"
   },
@@ -45,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.76.0"
+    "sass": "^1.76.0",
+    "sass-resources-loader": "^2.2.5"
   }
 }
