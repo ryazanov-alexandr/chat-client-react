@@ -55,9 +55,7 @@
 
 .text {
   font-size: 0.9em;
-  font-weight: 400;
   word-wrap: break-word;
-  overflow: auto;
 }
 
 .dateTime {
@@ -65,8 +63,6 @@
   font-style: italic;
   font-size: 0.6em;
   color: $feature-color;
-  text-align: end;
-  margin-top: 0px;
 }
 
 

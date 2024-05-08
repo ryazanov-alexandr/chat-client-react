@@ -9,5 +9,5 @@ export const useOnlineUsers = () => {
 };
 
 export const useFeedback = () => {
-  return useSelector(state => state.users.feedack);
+  return useSelector(state => state.messages.feedback);
 };

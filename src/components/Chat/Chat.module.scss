@@ -1,7 +1,6 @@
 @import "../../styles/variables"; 
 
 .chat {
-    // min-width: clamp(300px, 100%, 60vw);
     width: max(300px, 60%);
     display: flex;
     flex-direction: column;

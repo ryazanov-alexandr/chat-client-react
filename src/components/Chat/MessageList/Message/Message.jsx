@@ -28,7 +28,7 @@ export const Message = ({ message }) => {
         {message.author && (
           <span className={styles.author}>{message.author}</span>
         )}
-        {message.imageBase64 && <img src={imageSrc} class={styles.messageImage} alt="" />}
+        {message.imageBase64 && <img src={imageSrc} className={styles.messageImage} alt="" />}
         <p className={styles.textWrapper}>
           <span className={styles.text}>{message.text}</span>
           <Moment className={styles.dateTime} format="HH:mm">

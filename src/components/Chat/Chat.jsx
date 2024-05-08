@@ -26,7 +26,7 @@ export const Chat = () => {
 
   const onChangeInput = (messageText) => {
     console.log(messageText);
-    setMessageText(messageText);
+    setMessageText(messageText.trim());
     dispatch(sendFeedbackAction(`${user.name} набирает сообщение...`));
   };
 
