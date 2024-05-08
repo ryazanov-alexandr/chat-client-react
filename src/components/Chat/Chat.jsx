@@ -51,7 +51,6 @@ export const Chat = () => {
 
     setMessageText("");
     setMessageImage("");
-    console.log(divRef.current.textContent);
     divRef.current.textContent = "";
 
   };

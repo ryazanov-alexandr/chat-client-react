@@ -4,8 +4,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 40px;
+  padding-top: 200px;
 }
 
 h1 {
@@ -41,5 +42,12 @@ h1 {
     background: transparent;
     color: $dark-blue;
     border-color: $dark-blue;
+  }
+}
+
+@media (max-width: 768px) {
+  .greetings {
+    padding-top: 0px;
+    justify-content: center;
   }
 }

@@ -7,8 +7,6 @@ export const Message = ({ message }) => {
   const [imageSrc, setImgSrc] = useState('spinning-dots.svg');
 
   useEffect(() => {
-    console.log('qwe')
-
     if (!message.imageBase64) return;
 
     const getImg = async () => {

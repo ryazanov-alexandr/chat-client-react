@@ -19,6 +19,7 @@
     align-self: center;
     overflow: hidden;
     color: $dark-grey;
+    white-space: pre-line;
 }
 
 .textInput:empty::before {
